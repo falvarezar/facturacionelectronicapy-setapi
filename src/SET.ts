@@ -49,6 +49,7 @@ class SET {
       try {
         let defaultConfig: SetApiConfig = {
           debug: false,
+          timeout: 90000,
         };
 
         defaultConfig = Object.assign(defaultConfig, config);
@@ -102,6 +103,7 @@ class SET {
               "Content-Type": "application/xml; charset=utf-8",
             },
             httpsAgent,
+            timeout: defaultConfig.timeout,
           })
           .then((respuestaSuccess: any) => {
             var parser = new xml2js.Parser({ explicitArray: false });
@@ -173,7 +175,10 @@ class SET {
       try {
         let defaultConfig: SetApiConfig = {
           debug: false,
+          timeout: 90000,
         };
+
+        console.log("El config del params viene ", config);
 
         defaultConfig = Object.assign(defaultConfig, config);
 
@@ -228,6 +233,7 @@ class SET {
               "Content-Type": "application/xml; charset=utf-8",
             },
             httpsAgent,
+            timeout: defaultConfig.timeout,
           })
           .then((respuestaSuccess: any) => {
             var parser = new xml2js.Parser({ explicitArray: false });
@@ -256,6 +262,7 @@ class SET {
             }
           })
           .catch((err: any) => {
+            console.log("CAtch en error 1111", err);
             if (err && err.response && err.response.data) {
               var xmlResponse = err.response.data;
               var parser = new xml2js.Parser({ explicitArray: false });
@@ -273,6 +280,7 @@ class SET {
             }
           });
       } catch (error) {
+        console.log("CAtch en error 2222", error);
         reject(error);
       }
     });
@@ -295,6 +303,7 @@ class SET {
       try {
         let defaultConfig: SetApiConfig = {
           debug: false,
+          timeout: 90000,
         };
 
         defaultConfig = Object.assign(defaultConfig, config);
@@ -352,6 +361,7 @@ class SET {
               "Content-Type": "application/xml; charset=utf-8",
             },
             httpsAgent,
+            timeout: defaultConfig.timeout,
           })
           .then((respuestaSuccess: any) => {
             var parser = new xml2js.Parser({ explicitArray: false });
@@ -424,6 +434,7 @@ class SET {
       try {
         let defaultConfig: SetApiConfig = {
           debug: false,
+          timeout: 90000,
         };
 
         defaultConfig = Object.assign(defaultConfig, config);
@@ -480,6 +491,7 @@ class SET {
               "Content-Type": "application/xml; charset=utf-8",
             },
             httpsAgent,
+            timeout: defaultConfig.timeout,
           })
           .then((respuestaSuccess: any) => {
             var parser = new xml2js.Parser({ explicitArray: false });
@@ -552,6 +564,7 @@ class SET {
       try {
         let defaultConfig: SetApiConfig = {
           debug: false,
+          timeout: 90000,
         };
 
         defaultConfig = Object.assign(defaultConfig, config);
@@ -640,6 +653,7 @@ class SET {
               "Content-Type": "application/xml; charset=utf-8",
             },
             httpsAgent,
+            timeout: defaultConfig.timeout,
           })
           .then((respuestaSuccess: any) => {
             var parser = new xml2js.Parser({ explicitArray: false });
@@ -716,6 +730,7 @@ class SET {
       try {
         let defaultConfig: SetApiConfig = {
           debug: false,
+          timeout: 90000,
         };
 
         defaultConfig = Object.assign(defaultConfig, config);
@@ -760,6 +775,7 @@ class SET {
               "Content-Type": "application/xml; charset=utf-8",
             },
             httpsAgent,
+            timeout: defaultConfig.timeout,
           })
           .then((respuestaSuccess: any) => {
             var parser = new xml2js.Parser({ explicitArray: false });
