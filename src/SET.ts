@@ -98,7 +98,7 @@ class SET {
       } else {
         throw new Error("Error de conexión con la SET");
       }
-    } catch (err: any) {
+    } catch (err) {
       if (err && err.response && err.response.data) {
         var xmlResponse = err.response.data;
         var parser = new xml2js.Parser({ explicitArray: false });
@@ -279,7 +279,7 @@ class SET {
       } else {
         throw new Error("Error de conexión con la SET");
       }
-    } catch (err: any) {
+    } catch (err) {
       if (err && err.response && err.response.data) {
         var xmlResponse = err.response.data;
         var parser = new xml2js.Parser({ explicitArray: false });
@@ -376,7 +376,7 @@ class SET {
       } else {
         throw new Error("Error de conexión con la SET");
       }
-    } catch (err: any) {
+    } catch (err) {
       if (err && err.response && err.response.data) {
         var xmlResponse = err.response.data;
         var parser = new xml2js.Parser({ explicitArray: false });
@@ -478,7 +478,7 @@ class SET {
       } else {
         throw new Error("Error de conexión con la SET");
       }
-    } catch (err: any) {
+    } catch (err) {
       if (err && err.response && err.response.data) {
         var xmlResponse = err.response.data;
         var parser = new xml2js.Parser({ explicitArray: false });
@@ -607,7 +607,7 @@ class SET {
       } else {
         throw new Error("Error de conexión con la SET");
       }
-    } catch (err: any) {
+    } catch (err) {
       if (err && err.response && err.response.data) {
         var xmlResponse = err.response.data;
         var parser = new xml2js.Parser({ explicitArray: false });
@@ -696,7 +696,7 @@ class SET {
       } else {
         throw new Error("Error de conexión con la SET");
       }
-    } catch (err: any) {
+    } catch (err) {
       if (err && err.response && err.response.data) {
         var xmlResponse = err.response.data;
         var parser = new xml2js.Parser({ explicitArray: false });
