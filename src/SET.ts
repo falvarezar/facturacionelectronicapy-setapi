@@ -117,7 +117,7 @@ class SET {
   }
 
   /**
-   * Consulta un lote en la SET (Método sin uso, se deja comentado)
+   * Consulta un lote en la SET (Método sin uso)
    */
   async consultaLote2222(
     id: number,
